@@ -1,0 +1,44 @@
+header 
+{
+background-color: grey;
+flex-direction: row;
+text-align: center;
+border: 3px solid green;
+display: flex ;
+justify-content: space-between;
+
+}
+
+a 
+{
+text-decoration: none;
+}
+.studentName{
+
+    display: flex ;
+    justify-content: space-between;
+    
+
+}
+form
+{
+    width: 300px;
+    margin: 0 auto;
+}
+h2{text-align: center;}
+fotter
+  {     position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    background-color: gray;
+    text-align: center;}
+  .button {
+    background-color:rgb(100, 64, 162);
+    
+  }
+  .overview
+  {
+margin:60px;
+
+  }
