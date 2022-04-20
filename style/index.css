@@ -1,0 +1,57 @@
+header 
+{
+background-color: grey;
+flex-direction: row;
+text-align: center;
+border: 3px solid green;
+display: flex ;
+justify-content: space-between;
+
+}
+
+a 
+{
+text-decoration: none;
+
+}
+.header1
+{
+    font-size: larger;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+align-items: center;
+margin-left: auto;
+  margin-right: auto;
+  }
+.contactMe
+{
+    border-collapse: collapse;
+    align-items: center;
+    margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+}
+fotter
+  {    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+background-color: gray;
+text-align: center;
+  }
+  #lname
+  {
+
+    background-color: brown;
+    text
+  }
+  #lname1
+  {
+
+    background-color:green;
+  }
