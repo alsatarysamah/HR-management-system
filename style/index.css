@@ -2,15 +2,15 @@
 
 header 
 {
-background-color: grey;
+background-color: #FFD59E;
 flex-direction: row;
 text-align: center;
-border: 3px solid green;
+
 display: flex ;
 justify-content: space-between;
 
 }
-
+body{background-color: #F9FFA4;}
 a 
 {
 text-decoration: none;
@@ -39,11 +39,11 @@ margin-left: auto;
 
 }
 fotter
-  {    position: absolute;
+  {    position: fixed;
     bottom: 0;
     width: 100%;
     display: block;
-background-color: gray;
+background-color:#FFA1A1;
 text-align: center;
   }
   #lname
@@ -57,19 +57,16 @@ text-align: center;
 
     background-color: red;
   }
-  #sec
+
+section
   {
-    /* border-style: inset;
-    border-color: coral;
-    border-width: 7px;
-    font-family: "Lucida Console", "Courier New", monospace;
-    background-color: aquamarine;
-    display: flex;
-    flex-direction: column;
-    */
+    border: 3px solid green;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: #B4FF9F;
+    border: 60px;
 
   }

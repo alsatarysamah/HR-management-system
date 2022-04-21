@@ -33,47 +33,36 @@ Employee.prototype.calcSallary = function () {
 }
 
 //render
-let header = document.getElementById("header1");
-let sec = document.getElementById("sec");
+
+
 Employee.prototype.printing = function () {
 
     for (var i = 0; i < empArr.length; i++) {
-        var imageEl = new Image(); 
+       let sec = document.getElementById("sec");
+         sec = document.createElement("section");
+         document.body.appendChild(sec);
+         //add img  to the card
+        var imageEl = new Image();
         imageEl.src = empArr[i].image;
-
-       //  document.getElementById('container').appendChild(image);
-        // let imageEl = document.createElement("img");
-        // imageEl.src = empArr[i].image;
-        // console.log(+empArr[i].image);
-         sec.appendChild(imageEl);
+        sec.appendChild(imageEl);
+        
 
         let fullName = document.createElement("p");
-        fullName.textContent = empArr[i].fullName ;
+        fullName.textContent = empArr[i].fullName;
         sec.appendChild(fullName);
 
 
-        
+
         let departmentAndLevel = document.createElement("p");
-        departmentAndLevel.textContent = "Department : "+empArr[i].department +"      "+"Level :"+empArr[i].level ;
+        departmentAndLevel.textContent = "Department : " + empArr[i].department + "      " + "Level :" + empArr[i].level;
         sec.appendChild(departmentAndLevel);
 
         let empID = document.createElement("p");
         empID.textContent = empArr[i].employeeID;
         sec.appendChild(empID);
-
-
-        // let department = document.getElementById("department");
-        // department.textContent = empArr[i].department;
-        // sec.appendChild(department);
-
-        
-        
-        
     }
 
-    // document.write( this.fullName);
-    // document.write("    ");
-    // document.write( this.salary);
+   
 
 }
 Employee.prototype.netSallary = function () {
@@ -83,9 +72,6 @@ Employee.prototype.netSallary = function () {
 
 
 }
-
-
-
 
 
 //functions
@@ -105,7 +91,7 @@ function submition(event) {
     let department = event.target.department.value;
     let level = event.target.level.value;
     let imgURL = event.target.img1.value;
-    console.log(department);
+
     let newEmp = new Employee(generateID(), fullName, department, level, imgURL, 0);
     newEmp.printing();
     newEmp.calcSallary();
