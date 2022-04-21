@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
 header 
 {
 background-color: grey;
@@ -48,10 +50,26 @@ text-align: center;
   {
 
     background-color: brown;
-    text
+    
   }
   #lname1
   {
 
-    background-color:green;
+    background-color: red;
+  }
+  #sec
+  {
+    /* border-style: inset;
+    border-color: coral;
+    border-width: 7px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+
   }

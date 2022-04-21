@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./style/index.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR mangment</title>
-</head>
-<body>
-    <header>
-   
-   
 
-   
-        <img src="./assest/logoipsum-logo-36.svg" alt="alternatetext">
-      <h1>HR mangment</h1>
-         <link rel="icon" type="image/x-icon" href="/todo-project/favicon.jpg">
-        
-        
-            <a href="./index.html">Home </a>
-          
-            <a href="./AccountingPage.html">Accounting page</a>
-         
-       
-      </header>
-    
-<main>
-<div id="ss"> </div>
-</main>
-      <fotter>
-        <p>	&copy;2022 ASAC all right are reserve</p>
-          </fotter> 
-          <script src="./js/app.js"></script> 
+<head>
+  <link rel="stylesheet" href="./style/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR mangment</title>
+</head>
+
+<body>
+  <header id="header1">
+
+
+
+
+    <img src="./assest/logoipsum-logo-36.svg" alt="alternatetext">
+    <h1>HR mangment</h1>
+    <link rel="icon" type="image/x-icon" href="/todo-project/favicon.jpg">
+
+
+    <a href="./index.html">Home </a>
+
+    <a href="./AccountingPage.html">Accounting page</a>
+
+
+  </header>
+
+  <main>
+    <form id="formid">
+      <label for="fname">Full Name:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="full name"><br>
+      <br>
+      <label for="department">Department</label><br>
+      <select name="department" id="department">
+        <option value="Administration">Administration</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Development">Development</option>
+        <option value="Finance">Finance</option>
+      </select>
+      <br>
+      <br>
+      <label for="level">Level</label><br>
+      <select name="level" id="level">
+        <option value="Junior">Junior</option>
+        <option value="MidSenior">Mid-Senior</option>
+        <option value="Senior">Senior</option>
+      </select>
+      <br>
+      <br>
+      <label for="img1">Image URL:</label><br>
+      <input type="text" id="img1" name="img1" placeholder="image URL"><br>
+      <input type="submit" value="Submit">
+    </form>
+    <section id="sec"></section>
+  </main>
+  <fotter>
+    <p> &copy;2022 ASAC all right are reserve</p>
+  </fotter>
+  <script src="./js/app.js"></script>
+ 
 </body>
+
 </html>
