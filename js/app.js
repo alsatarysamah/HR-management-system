@@ -38,14 +38,14 @@ Employee.prototype.calcSallary = function () {
 Employee.prototype.printing = function () {
 
     for (var i = 0; i < empArr.length; i++) {
-       let sec = document.getElementById("sec");
-         sec = document.createElement("section");
-         document.body.appendChild(sec);
-         //add img  to the card
+        let sec = document.getElementById("sec");
+        sec = document.createElement("section");
+        document.body.appendChild(sec);
+        //add img  to the card
         var imageEl = new Image();
         imageEl.src = empArr[i].image;
         sec.appendChild(imageEl);
-        
+
 
         let fullName = document.createElement("p");
         fullName.textContent = empArr[i].fullName;
@@ -62,7 +62,7 @@ Employee.prototype.printing = function () {
         sec.appendChild(empID);
     }
 
-   
+
 
 }
 Employee.prototype.netSallary = function () {
@@ -83,7 +83,7 @@ function getRndInteger(min, max) {
 
 let formEl = document.getElementById("formid");
 formEl.addEventListener("submit", submition);
-
+renderAll();
 
 function submition(event) {
     event.preventDefault();
@@ -96,9 +96,39 @@ function submition(event) {
     newEmp.printing();
     newEmp.calcSallary();
     newEmp.netSallary();
+    saveData(empArr);
 
 }
 function generateID() {
     var val = Math.floor(1000 + Math.random() * 9000);
     return val;
 }
+function saveData(data) {
+    let str = JSON.stringify(data);
+    localStorage.setItem("emp", str);
+
+}
+
+function getData() {
+    let ret = localStorage.getItem("emp");
+    let arr = JSON.parse(ret);
+    if (arr != null)
+        for (var i = 0; i < arr.length; i++) {
+
+            new Employee(arr[i].employeeID, arr[i].fullName, arr[i].department, arr[i].level, arr[i].image, arr[i].salary)
+        }
+renderAll();
+}
+
+function renderAll()
+{
+    for (var i = 0; i < empArr.length; i++)
+    {
+empArr[i].printing();
+
+    }
+
+}
+getData() ;
+
+
